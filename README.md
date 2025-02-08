@@ -20,7 +20,7 @@ The classic Ultimate Tic Tac Toe game implemented in pure Python using pygame wi
    - Download the latest release or clone the repository using:
      
      ```bash
-     git clone https://github.com/vSparkyy/UltimateTicTacToe.git
+     git clone https://github.com/vSparkyy/Ultimate-Tic-Tac-Toe-MCTS.git
      ```
 
 2. **Install the Required Dependencies**:
