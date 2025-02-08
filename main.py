@@ -588,7 +588,7 @@ while True:
                         row = (my - TOP_OFFSET) // CELL_SIZE
                         b_index = 3 * (row // 3) + (col // 3)
                         c_index = 3 * (row % 3) + (col % 3)
-                        if game_state.next_board is not None and b_index == game_state.next_board:
+                        if not(game_state.next_board is not None and b_index != game_state.next_board):
                             if game_state.boards[b_index][c_index] == " ":
                                 game_state.make_move((b_index, c_index))
 
