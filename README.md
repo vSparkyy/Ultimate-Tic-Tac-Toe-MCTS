@@ -1,6 +1,6 @@
 # Ultimate Tic Tac Toe with MCTS
 
-The classic Ultimate Tic Tac Toe game implemented in pure Python using pygame with an integrated Monte Carlo Tree Search (MCTS) AI solver. Enjoy smooth animations, interactive gameplay, and adjustable AI difficulty!
+The classic Ultimate Tic Tac Toe game implemented in pure Python using pygame with an integrated Monte Carlo Tree Search (MCTS) AI solver. Enjoy a sleek design, interactive gameplay, and adjustable AI difficulty!
 
 ## Features
 
