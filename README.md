@@ -50,7 +50,7 @@ The classic Ultimate Tic Tac Toe game implemented in pure Python using pygame wi
 ## Credits
 
 - Made by Harshil (vSparkyy)
-- Inspired by classic Ultimate Tic Tac Toe games.
+- Inspired by the classic Ultimate Tic Tac Toe game.
 
 ## Contributing
 
