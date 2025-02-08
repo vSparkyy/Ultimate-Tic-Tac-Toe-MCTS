@@ -553,6 +553,7 @@ def run_mcts_in_thread(state, iterations, ai_info_dict):
 
 
 falling_markers = [FallingMarker() for _ in range(30)]
+updated = False
 
 while True:
     for event in pygame.event.get():
@@ -592,6 +593,15 @@ while True:
                             if game_state.boards[b_index][c_index] == " ":
                                 game_state.make_move((b_index, c_index))
 
+            elif game_mode == "2p" and game_state.overall_winner is not None and not updated:
+                updated = True
+                if game_state.overall_winner == "X":
+                    pvp_score_x += 1
+                elif game_state.overall_winner == "O":
+                    pvp_score_o += 1
+                else:
+                    pvp_draws += 1
+
             reset_button.handle_event(event)
             return_button.handle_event(event)
 
@@ -605,6 +615,10 @@ while True:
         slider.update()
 
     if scene == "menu":
+        pvp_draws = 0
+        pvp_score_x = 0
+        pvp_score_o = 0
+        updated = False
         screen.fill(colours["background"])
 
         for fm in falling_markers:
